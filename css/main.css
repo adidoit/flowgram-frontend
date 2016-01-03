@@ -4,6 +4,9 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+	background-color: skyblue;
+}
 
 .navbar-custom {
     background-color: #000002;
