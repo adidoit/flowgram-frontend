@@ -8,3 +8,4 @@ Snap.load("svg/loadbalancer.svg",onSVGLoaded);
 function onSVGLoaded(data){
 	s.append(data);
 }
+
