@@ -13,34 +13,11 @@ body {
     color: green;
 }
 
-
-@-webkit-keyframes shake {
-	0%   { property: value; }
-	100% { property: value; }
+#loadbalancer {
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-bottom: 20%;
 }
-@-moz-keyframes shake {
-  	0%   { property: value; }
-  	100% { property: value; }
-}
-@-o-keyframes shake {
-  	0%   { property: value; }
-  	100% { property: value; }
-}
-@keyframes shake {
- 	0%   { property: value; }
-  	100% { property: value; }
-}
-
-
-.shake-element {
-  -webkit-animation: shake 5s infinite; /* Safari 4+ */
-  -moz-animation:    shake 5s infinite; /* Fx 5+ */
-  -o-animation:      shake 5s infinite; /* Opera 12+ */
-  animation:         shake 5s infinite; /* IE 10+ */
-}
-
-
-
 
 
 
