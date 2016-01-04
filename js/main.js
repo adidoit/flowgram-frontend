@@ -8,7 +8,7 @@ Snap.load("svg/loadbalancer.svg",onSVGLoaded);
 function onSVGLoaded(data){
 	s.append(data);
 }
-
+/*
 var facebook = Snap("#facebook");
 
 var loadbalancer = Snap("#loadbalancer");
@@ -22,3 +22,5 @@ loadbalancer.attr({
 	x: 10%.
 	y: 10%
 });
+
+*/
