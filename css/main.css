@@ -16,9 +16,10 @@ body {
 
 
 
-.navbar-custom {
-    background-color: green;
-    color: green;
+.navbar-inverse {
+	background-image: none;
+	background-repeat: none;
+    background-color: #000002;
 }
 
 #loadbalancer {
