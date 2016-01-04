@@ -9,17 +9,5 @@ function onSVGLoaded(data){
 	s.append(data);
 }
 
-var facebook = Snap("#facebook");
 
-var loadbalancer = Snap("#loadbalancer");
-
-facebook.attr({
-	x: 60%,
-	y: 70%
-});
-
-loadbalancer.attr({
-	x: 10%.
-	y: 10%
-});
-
+swal({   title: 'Error!',   text: 'Do you want to continue',   type: 'error',   confirmButtonText: 'Cool' });
