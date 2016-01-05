@@ -45,9 +45,6 @@ $( document ).ready(function() {
 		console.log('option-3');
 	})
 
-	function resetMainHeader(){
-		mainHeader = 
-	}
 
 	function userToWebServer(){
 
