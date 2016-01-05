@@ -27,6 +27,12 @@ $( document ).ready(function() {
 		$('#btn-danger').removeAttr('disabled');
 	})
      
+	$('#btn-explain').on('click',function(){
+		$('#user').popover('show');
+		setTimeout(function(){$('user').popover('hide')},3000);
+
+	})
+
     new Taggle('taggle', {
     tags: ['web', 'e-commerce', 'database', 'paypal','facebook']
 });
