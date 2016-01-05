@@ -31,6 +31,64 @@ $( document ).ready(function() {
 		explainUser();
 	})
 
+	$('#btn-walkthrough').on('click',function(){
+		walkthroughUser();
+	})
+
+//-----------------WALKTHROUGH CODE----------------------------
+
+
+	$('#option-1').on('click',function(){
+		console.log('option-1');
+	})
+	$('#option-2').on('click',function(){
+		console.log('option-2');
+	})
+	$('#option-3').on('click',function(){
+		console.log('option-3');
+	})
+
+
+	function walkthroughUser(){
+
+		$('#user').velocity({
+			color: '#A00'
+		})
+		$('#user').addClass('faa-horizontal animated');
+		$('#request').velocity({
+			'opacity': 1,
+			'z-index': 5
+		})
+		$('#request').attr('data-content','the user connects via the browser and attempts to login');
+		$('#request').popover('show')
+		setTimeout(function(){
+			$('#request').popover('hide')
+			$("#request").velocity({translateX: '500%'},3000);
+			$('#request').attr('data-content','the web server receives the request');
+			$('#request').popover('show')
+		},4000);
+	}
+
+	function happyUser(){
+			$('#user').removeClass('fa-male');
+			$('#user').addClass('fa-smile-o');
+			$('#user').addClass('faa-horizontal animated');
+
+			setTimeout(function(){
+				$('#user').removeClass('fa-smile-o');
+				$('#user').addClass('fa-male');
+				$('#user').removeClass('faa-horizontal animated');
+				$('#user').velocity({
+				color: '#000'
+			});
+			},5000)
+	}
+
+
+//--------------------------------------------------------------
+
+
+
 //------------------EXPLAIN CODE---------------------------------
 	function explainUser(){
 		$('#user').addClass('faa-pulse animated')

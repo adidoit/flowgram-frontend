@@ -66,13 +66,14 @@
     <div class="container-top">
 
       <div class="page-header">
-        <h1>web application architecture: goblue e-commerce app</h1>
+        <h1>web application architecture: sample flowgram</h1>
       </div>
       <div id="taggle">
 
       </div>
         <span id="internet">
           <i id="user" class="fa fa-male fa-5x" data-toggle="tooltip" data-placement="bottom" title="application user" data-content="the user connects to the application via the public internet"></i>
+          <i id="request" class="fa fa-3x fa-circle" data-toggle="popover" data-placement="bottom" title="user request" data-content=""></i>
           <i id="cloud" class="fa fa-cloud fa-5x" data-toggle="tooltip" data-placement="bottom" title="internet" data-content="the public internet allows anyone to access the application frontend"></i>
         </span>
 
@@ -94,7 +95,16 @@
 
     </div>
       <button type="button" id="btn-explain" class="btn btn-info">Explain Components</button>
-      <button type="button" id="btn-walkthrough" class="btn btn-info">Walkthrough</button>
+      <div class="btn-group">
+          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Walkthrough <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a id="option-1" href="#">Login scenario</a></li>
+            <li><a id="option-2" href="#">Cached Request</a></li>
+            <li><a id="option-3" href="#">API exception</a></li>
+        </ul>
+      </div>
       <a class="btn btn-primary" href="firewall-rules.xlsx" download>Export Firewall Rules</a>
       <button type="button" id="btn-success" class="btn btn-success">Approve Flowgram</button>
       <button type="button" id="btn-danger" class="btn btn-danger">Reject Flowgram</button>
