@@ -28,8 +28,16 @@ $( document ).ready(function() {
 	})
      
 	$('#btn-explain').on('click',function(){
+		$('#user').velocity({
+			scale: 1.3,
+			color:'#0000FF'
+		},1000);
 		$('#user').popover('show');
-		setTimeout(function(){$('user').popover('hide')},3000);
+		$('#user').velocity({
+			scale: 1,
+			color: '#000'
+		},1000);
+		setTimeout(function(){$('#user').popover('hide');},3000);
 
 	})
 
