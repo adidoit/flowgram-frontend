@@ -6,12 +6,12 @@
 
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+94,a1dbff+100 */
-	background: rgb(240,249,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 94%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 94%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 94%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
-
+	/*background: rgb(240,249,255); 
+	background: -moz-linear-gradient(top,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 94%, rgba(161,219,255,1) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 94%,rgba(161,219,255,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 94%,rgba(161,219,255,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); 
+*/
 }
 
 
@@ -21,6 +21,7 @@ body {
 	background-image: none;
 	background-repeat: none;
     background-color: #000002;
+    border-bottom: 10px gray;
 }
 
 #loadbalancer {
@@ -35,4 +36,31 @@ body {
 
 footer {
 	margin: 20px;
+}
+
+.container-top {
+	display: block;
+	margin-bottpm: 50px;
+}
+
+i {
+	margin: 20px 20px;
+}
+
+.fa-facebook-official {
+	color: #425F9C
+}
+
+.fa-paypal {
+	color: #009CDE
+}
+
+.page-header {
+	margin-left: 25px;
+}
+
+
+.taggle_list {
+	display: inline;
+	color: #555;
 }
