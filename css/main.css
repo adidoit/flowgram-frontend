@@ -40,21 +40,25 @@ footer {
 
 .container-top {
 	display: block;
-	margin-bottpm: 50px;
+	margin-bottom: 50px;
 }
 
 i {
 	margin: 20px 20px;
 }
 
+.page-header{
+	margin-top: 2%;
+}
+
 #user {
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-left: 5%
 }
 
 #cloud {
 	margin-left: 5%;
-	margin-top: 5%;
+	margin-top: 3%;
 
 }
 #web-server {
@@ -67,13 +71,13 @@ i {
 }
 
 #app-server {
-	margin-top: 10%;
+	margin-top: 3%;
 	margin-left: 8%;
 
 }
 
 .api {
-	margin-top: 7%;
+	margin-top: 3%;
 	margin-left: 57%;
 }
 #facebook {
@@ -85,7 +89,7 @@ i {
 }
 
 #database {
-	margin-top: 10%;
+	margin-top: 6%;
 	margin-left: 5%;
 	margin-right: 7%;
 	float: right;
