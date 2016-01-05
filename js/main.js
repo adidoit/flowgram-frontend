@@ -31,10 +31,6 @@ $( document ).ready(function() {
 		explainUser();
 	})
 
-	$('#btn-walkthrough').on('click',function(){
-		walkthroughUser();
-	})
-
 //-----------------WALKTHROUGH CODE----------------------------
 
 
@@ -43,13 +39,17 @@ $( document ).ready(function() {
 	})
 	$('#option-2').on('click',function(){
 		console.log('option-2');
+		userToWebServer();
 	})
 	$('#option-3').on('click',function(){
 		console.log('option-3');
 	})
 
+	function resetMainHeader(){
+		mainHeader = 
+	}
 
-	function walkthroughUser(){
+	function userToWebServer(){
 
 		$('#user').velocity({
 			color: '#A00'
@@ -59,30 +59,39 @@ $( document ).ready(function() {
 			'opacity': 1,
 			'z-index': 5
 		})
-		$('#request').attr('data-content','the user connects via the browser and attempts to login');
-		$('#request').popover('show')
+		$('#main').text('The user generates a request by accessing the web application');
 		setTimeout(function(){
-			$('#request').popover('hide')
-			$("#request").velocity({translateX: '500%'},3000);
-			$('#request').attr('data-content','the web server receives the request');
-			$('#request').popover('show')
+			//$('#request').popover('hide');
+			$('#main').text('The web server sees the request is cacheable and checks the cache');
+			$('#request').velocity({translateX: '535%'},1500);
+			webServerToCache();
+
 		},4000);
 	}
 
-	function happyUser(){
-			$('#user').removeClass('fa-male');
-			$('#user').addClass('fa-smile-o');
-			$('#user').addClass('faa-horizontal animated');
-
+	function webServerToCache(){
 			setTimeout(function(){
-				$('#user').removeClass('fa-smile-o');
-				$('#user').addClass('fa-male');
-				$('#user').removeClass('faa-horizontal animated');
-				$('#user').velocity({
-				color: '#000'
-			});
-			},5000)
+				$('#main').text('The cache hit is a success!');
+				$('#request').velocity({translateX: '750%'},1500);
+				cacheBackToUser();
+			},4000);
 	}
+
+	function cacheBackToUser(){
+			setTimeout(function(){
+
+				$('#main').text('The cached content is returned to the user');
+				$('#request').velocity({
+					color: '#00A'
+				});
+				$('#request').velocity({translateX: '0'},1500);
+				$('#user').velocity({
+					color: '#000'
+				})
+				$('#user').removeClass('faa-horizontal animated');
+			},4000);
+	}
+
 
 
 //--------------------------------------------------------------
