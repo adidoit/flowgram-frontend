@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	$('#btn-explain').on('click',function(){
 		$('#user').velocity({
 			scale: 1.3,
-			color:'#0000FF'
+			color:'#00F'
 		},1000);
 		$('#user').popover('show');
 		$('#user').velocity({
