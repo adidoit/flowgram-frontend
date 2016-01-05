@@ -31,7 +31,7 @@ $( document ).ready(function() {
 		explainUser();
 	})
 
-
+//------------------EXPLAIN CODE---------------------------------
 	function explainUser(){
 		$('#user').addClass('faa-pulse animated')
 		$('#user').popover('show');
@@ -49,16 +49,76 @@ $( document ).ready(function() {
 		setTimeout(function(){
 			$('#cloud').popover('hide');
 			$('#cloud').removeClass('faa-pulse animated');
+			explainWebServer();
 		},4000);
 	}
 
-	/*$('i').on.('mouseenter',function(){
-		$(this).addClass('faa-pulse animated');
-	})
-	$('i').on.('mouseleave',function(){
-		$(this).removeClass('faa-pulse animated');
-	})*/
+	function explainWebServer(){
+		$('#web-server').addClass('faa-pulse animated')
+		$('#web-server').popover('show');
 
+		setTimeout(function(){
+			$('#web-server').popover('hide');
+			$('#web-server').removeClass('faa-pulse animated');
+			explainCache();
+		},4000);
+	}
+
+	function explainCache(){
+		$('#cache').addClass('faa-pulse animated')
+		$('#cache').popover('show');
+
+		setTimeout(function(){
+			$('#cache').popover('hide');
+			$('#cache').removeClass('faa-pulse animated');
+			explainAppServer();
+		},4000);
+	}
+
+	function explainAppServer(){
+		$('#app-server').addClass('faa-pulse animated')
+		$('#app-server').popover('show');
+
+		setTimeout(function(){
+			$('#app-server').popover('hide');
+			$('#app-server').removeClass('faa-pulse animated');
+			explainDatabase();
+		},4000);
+	}
+
+	function explainDatabase(){
+		$('#database').addClass('faa-pulse animated')
+		$('#database').popover('show');
+
+		setTimeout(function(){
+			$('#database').popover('hide');
+			$('#database').removeClass('faa-pulse animated');
+			explainFacebookAPI()
+		},4000);
+	}
+
+	function explainFacebookAPI(){
+		$('#facebook').addClass('faa-pulse animated')
+		$('#facebook').popover('show');
+
+		setTimeout(function(){
+			$('#facebook').popover('hide');
+			$('#facebook').removeClass('faa-pulse animated');
+			explainPaypalAPI();
+		},4000);
+	}
+
+	function explainPaypalAPI(){
+		$('#paypal').addClass('faa-pulse animated')
+		$('#paypal').popover('show');
+
+		setTimeout(function(){
+			$('#paypal').popover('hide');
+			$('#paypal').removeClass('faa-pulse animated');
+		},4000);
+	}
+
+	//------------------END EXPLAIN CODE--------------------------
     new Taggle('taggle', {
     tags: ['web', 'e-commerce', 'database', 'paypal','facebook']
 });
