@@ -36,6 +36,7 @@ $( document ).ready(function() {
 
 	$('#option-1').on('click',function(){
 		console.log('option-1');
+		userToWebServerLogin();
 	})
 	$('#option-2').on('click',function(){
 		console.log('option-2');
@@ -46,8 +47,73 @@ $( document ).ready(function() {
 	})
 
 
-	function userToWebServer(){
+//========= start scenario 1 =======
 
+	function userToWebServerLogin(){
+		$('#user').velocity({
+			color: '#A00'
+		})
+		$('#user').addClass('faa-horizontal animated');
+		$('#request').velocity({
+			'opacity': 1,
+			'z-index': 5
+		})
+		$('#main').text('The user attempts to login');
+		setTimeout(function(){
+			//$('#request').popover('hide');
+			$('#main').text('The web server forwards to the app server');
+			$('#request').velocity({translateX: '535%'},1500);
+			webServerToAppServer();
+
+		},4000);
+	}
+
+	function webServerToAppServer(){
+		setTimeout(function(){
+			$('#main').text('The app server is configured to authenticate with the facebook API');
+			$('#request').velocity({translateX: '1050%'},1500);
+			authwithFB();
+		},4000);		
+	}
+
+	function authwithFB(){
+		setTimeout(function(){
+			$('#main').text('An OAuth request is made to Facebook');
+			$('#request').velocity({translateY: '350%'},1500);
+			returnOAuth();
+		},4000);
+	}
+
+	function returnOAuth(){
+		setTimeout(function(){
+			$('#main').text('Facebook authenticates and returns an OAuth Token');
+			$('#request').velocity({
+					color: '#00A'
+				});
+			$('#request').velocity({translateY: '0%'},1500);
+			returnContent();
+		},4000);
+	}
+
+	function returnContent(){
+		setTimeout(function(){
+			$('#main').text('The login success page is returned to the user');
+			$('#request').velocity({
+					color: '#0A0'
+				});
+			$('#request').velocity({translateX: '0%'},1500);
+			$('#user').velocity({
+					color: '#000'
+				})
+			$('#user').removeClass('faa-horizontal animated');
+		},4000)
+	}
+
+//========= end scenario 1 =========
+
+//=========start scenario 2=========
+
+	function userToWebServer(){
 		$('#user').velocity({
 			color: '#A00'
 		})
@@ -89,7 +155,7 @@ $( document ).ready(function() {
 			},4000);
 	}
 
-
+//=========end scenario 2========
 
 //--------------------------------------------------------------
 
