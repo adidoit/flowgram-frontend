@@ -64,3 +64,7 @@ i {
 	display: inline;
 	color: #555;
 }
+
+#fork-button {
+	display: inline-block;
+}
