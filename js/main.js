@@ -28,18 +28,36 @@ $( document ).ready(function() {
 	})
      
 	$('#btn-explain').on('click',function(){
-		$('#user').velocity({
-			scale: 1.3,
-			color:'#555'
-		},1000);
-		$('#user').popover('show');
-		$('#user').velocity({
-			scale: 1,
-			color: '#000'
-		},1000);
-		setTimeout(function(){$('#user').popover('hide');},3000);
-
+		explainUser();
 	})
+
+
+	function explainUser(){
+		$('#user').addClass('faa-pulse animated')
+		$('#user').popover('show');
+
+		setTimeout(function(){
+			$('#user').popover('hide');
+			$('#user').removeClass('faa-pulse animated');
+			explainCloud();
+		},4000);
+	}
+	function explainCloud(){
+		$('#cloud').addClass('faa-pulse animated')
+		$('#cloud').popover('show');
+
+		setTimeout(function(){
+			$('#cloud').popover('hide');
+			$('#cloud').removeClass('faa-pulse animated');
+		},4000);
+	}
+
+	/*$('i').on.('mouseenter',function(){
+		$(this).addClass('faa-pulse animated');
+	})
+	$('i').on.('mouseleave',function(){
+		$(this).removeClass('faa-pulse animated');
+	})*/
 
     new Taggle('taggle', {
     tags: ['web', 'e-commerce', 'database', 'paypal','facebook']
