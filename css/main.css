@@ -48,24 +48,34 @@ i {
 }
 
 #user {
-
+	margin-top: 5%;
+	margin-left: 5%
 }
 
 #cloud {
+	margin-left: 5%;
+	margin-top: 5%;
 
 }
 #web-server {
-
+	margin-left: 10%
 }
 
 #cache{
+	margin-left: 5%;
 
 }
 
 #app-server {
+	margin-top: 10%;
+	margin-left: 8%;
 
 }
 
+.api {
+	margin-top: 7%;
+	margin-left: 57%;
+}
 #facebook {
 	color: #425F9C
 }
@@ -75,6 +85,10 @@ i {
 }
 
 #database {
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 7%;
+	float: right;
 
 }
 
