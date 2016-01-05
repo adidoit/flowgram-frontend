@@ -30,6 +30,10 @@ $( document ).ready(function() {
     new Taggle('taggle', {
     tags: ['web', 'e-commerce', 'database', 'paypal','facebook']
 });
+
+
+
+    
 });
 
 

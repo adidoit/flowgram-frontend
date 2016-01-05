@@ -47,13 +47,38 @@ i {
 	margin: 20px 20px;
 }
 
-.fa-facebook-official {
+#user {
+
+}
+
+#cloud {
+
+}
+#web-server {
+
+}
+
+#cache{
+
+}
+
+#app-server {
+
+}
+
+#facebook {
 	color: #425F9C
 }
 
-.fa-paypal {
+#paypal {
 	color: #009CDE
 }
+
+#database {
+
+}
+
+
 
 .page-header {
 	margin-left: 25px;
