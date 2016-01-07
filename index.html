@@ -78,15 +78,29 @@
         </span>
 
         <span id="dmz"> 
-          <i id="web-server" class="fa fa-cube fa-5x" data-toggle="tooltip" data-placement="bottom" title="web server" data-content="The web server is the first point of contact for the user's request. It is located in a 'Demilitarized Zone' where no data is persisted"></i>
-          <i id="cache" class="fa fa-archive fa-5x" data-toggle="tooltip" data-placement="bottom" title="cache" data-content="The cache stores and returns frequently requested content thus minimizing requests to the backend"></i>
+          <i id="web-server" class="fa fa-cube fa-5x" data-toggle="tooltip" data-html="true" data-placement="bottom" title="web server" data-content="The web server is the first point of contact for the user's request. It is located in a 'Demilitarized Zone' where no data is persisted. 
+          </br></br>Nginx Web server
+          </br>2 CPU Athlon
+          </br>2GB RAM
+          </br>10GB disk"></i>
+          <i id="cache" class="fa fa-archive fa-5x" data-toggle="tooltip" data-html="true" data-placement="bottom" title="cache" data-content="The cache stores and returns frequently requested content thus minimizing requests to the backend
+          </br></br>Redis in-memory cache
+          </br>4 core CPU i3
+          </br>12GB RAM
+          </br>6GB disk"></i>
         </span>
 
-        <i id="app-server" class="fa fa-server fa-5x" data-toggle="tooltip" data-placement="top" title="application server" data-content="The application server generates dynamic content to be returned to the user"></i>
-        
-        
+        <i id="app-server" class="fa fa-server fa-5x" data-toggle="tooltip" data-html="true" data-placement="top" title="application server" data-content="The application server generates dynamic content to be returned to the user
+          </br></br>Ruby on Rails App
+          </br>4 Core i5
+          </br>8GB RAM
+          </br>60GB disk"></i>  
         <span id="backend">
-          <i id="database" class="fa fa-database fa-5x" data-toggle="tooltip" title="database" data-placement="top" data-content="The database layer persists data generated and uploaded by the users"></i>
+          <i id="database" class="fa fa-database fa-5x" data-toggle="tooltip" data-html="true" title="database" data-placement="top" data-content="The database layer persists data generated and uploaded by the users
+          </br></br>PostgreSQL Server
+          </br>8 CPU Athlon
+          </br>16GB RAM
+          </br>100GB disk"></i>
         </span>
         <div class="api">
           <i id="facebook" class="fa fa-facebook-official fa-5x " data-toggle="tooltip" data-placement="top" title="facebook" data-content="The facebook social graph API is used as an authentication layer" ></i>
