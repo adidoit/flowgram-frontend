@@ -72,7 +72,7 @@ $( document ).ready(function() {
 	function webServerToAppServer(){
 		setTimeout(function(){
 			$('#main').text('The app server is configured to authenticate with the facebook API');
-			$('#request').velocity({translateX: '1000%'},1500);
+			$('#request').velocity({translateX: '925%'},1500);
 			authwithFB();
 		},4000);		
 	}
