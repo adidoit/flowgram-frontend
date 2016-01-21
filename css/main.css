@@ -60,8 +60,10 @@ footer {
 
 }
 #web-server {
-	margin-left: 10%
+
 }
+
+
 
 #cache{
 	margin-left: 3%;
@@ -70,13 +72,12 @@ footer {
 
 #app-server {
 	margin-top: 4%;
-	margin-left: 11%;
 
 }
 
 .api {
-	margin-top: 7%;
-	margin-left: 57%;
+	margin-top: 3%;
+	margin-left: 52%;
 }
 #facebook {
 	color: #425F9C
@@ -88,9 +89,8 @@ footer {
 
 #database {
 	margin-top: 4%;
-	margin-left: 5%;
+	margin-left: 3%;
 	margin-right: 7%;
-	float: right;
 
 }
 
@@ -116,4 +116,14 @@ footer {
   top: 25%;
   left: 0%;
   opacity: 0;
+}
+
+.fa-long-arrow-right {
+  color: #00F;
+}
+
+.fa-long-arrow-down {
+  margin-top: 2%;
+  color: #00F;
+  margin-left: 56%;
 }

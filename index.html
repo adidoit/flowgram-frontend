@@ -67,47 +67,55 @@
 
       <div class="page-header">
         <h1 id="main">web application architecture: sample flowgram</h1>
-      </div>
-      <div id="taggle">
+      </d>
 
-      </div>
         <span id="internet">
           <i id="user" class="fa fa-male fa-5x" data-toggle="tooltip" data-placement="bottom" title="application user" data-content="the user connects to the application via the public internet"></i>
           <i id="request" class="fa fa-3x fa-circle" data-toggle="popover" data-placement="bottom" title="user request" data-content=""></i>
+<i class="fa fa-long-arrow-right fa-5x"></i>
           <i id="cloud" class="fa fa-cloud fa-5x" data-toggle="tooltip" data-placement="bottom" title="internet" data-content="the public internet allows anyone to access the application frontend"></i>
         </span>
-
+<i class="fa fa-long-arrow-right fa-5x"></i>
         <span id="dmz"> 
           <i id="web-server" class="fa fa-cube fa-5x" data-toggle="tooltip" data-html="true" data-placement="bottom" title="web server" data-content="The web server is the first point of contact for the user's request. It is located in a 'Demilitarized Zone' where no data is persisted. 
           </br></br>Nginx Web server
           </br>2 CPU Athlon
           </br>2GB RAM
           </br>10GB disk"></i>
+<i class="fa fa-long-arrow-right fa-5x"></i>
           <i id="cache" class="fa fa-archive fa-5x" data-toggle="tooltip" data-html="true" data-placement="bottom" title="cache" data-content="The cache stores and returns frequently requested content thus minimizing requests to the backend
           </br></br>Redis in-memory cache
           </br>4 core CPU i3
           </br>12GB RAM
           </br>6GB disk"></i>
         </span>
-
-        <i id="app-server" class="fa fa-server fa-5x" data-toggle="tooltip" data-html="true" data-placement="top" title="application server" data-content="The application server generates dynamic content to be returned to the user
+<i class="fa fa-long-arrow-right fa-5x"></i>
+        <i id="app-server" class="fa fa-server fa-5x" data-toggle="tooltip" data-html="true" data-placement="bottom" title="application server" data-content="The application server generates dynamic content to be returned to the user
           </br></br>Ruby on Rails App
           </br>4 Core i5
           </br>8GB RAM
           </br>60GB disk"></i>  
+<i class="fa fa-long-arrow-right fa-5x"></i>
         <span id="backend">
-          <i id="database" class="fa fa-database fa-5x" data-toggle="tooltip" data-html="true" title="database" data-placement="top" data-content="The database layer persists data generated and uploaded by the users
+          <i id="database" class="fa fa-database fa-5x" data-toggle="tooltip" data-html="true" title="database" data-placement="bottom" data-content="The database layer persists data generated and uploaded by the users
           </br></br>PostgreSQL Server
           </br>8 CPU Athlon
           </br>16GB RAM
           </br>100GB disk"></i>
         </span>
+<div>
+<i class="fa fa-long-arrow-down fa-5x"></i>
+</div>
         <div class="api">
           <i id="facebook" class="fa fa-facebook-official fa-5x " data-toggle="tooltip" data-placement="top" title="facebook" data-content="The facebook social graph API is used as an authentication layer" ></i>
           <i id="paypal" class="fa fa-paypal fa-5x" data-toggle="tooltip" data-placement="top" title="paypal" data-content="Paypal is used as the payment processor in order to ensure security and compliance with PCI legislation"></i>
         </div>
 
     </div>
+
+          <div id="taggle">
+      </div>
+      
       <button type="button" id="btn-explain" class="btn btn-info">Explain Components</button>
       <div class="btn-group">
           <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,6 +130,7 @@
       <a class="btn btn-primary" href="firewall-rules.xlsx" download>Export Firewall Rules</a>
       <button type="button" id="btn-success" class="btn btn-success">Approve Flowgram</button>
       <button type="button" id="btn-danger" class="btn btn-danger">Reject Flowgram</button>
+
 
       <!-- <button type="button" class="btn btn-warning" id="btn-warning" data-toggle="popover" title="Approval Reset" data-content="Approval/Rejection status has been reset" >Reset Status</button> -->
       <hr>

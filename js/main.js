@@ -58,6 +58,7 @@ $( document ).ready(function() {
 			'opacity': 1,
 			'z-index': 5
 		})
+		$('#main').css({'color':'#F00'});
 		$('#main').text('The user attempts to login');
 		setTimeout(function(){
 			//$('#request').popover('hide');
@@ -71,7 +72,7 @@ $( document ).ready(function() {
 	function webServerToAppServer(){
 		setTimeout(function(){
 			$('#main').text('The app server is configured to authenticate with the facebook API');
-			$('#request').velocity({translateX: '1050%'},1500);
+			$('#request').velocity({translateX: '1000%'},1500);
 			authwithFB();
 		},4000);		
 	}
